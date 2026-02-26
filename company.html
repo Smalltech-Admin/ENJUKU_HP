@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>会社概要 | 株式会社炎熟</title>
+  <meta name="description" content="株式会社炎熟の会社概要。物流業界に特化したBPO・ビズデブ会社として、完全成果報酬で御社の課題を解決します。">
+  <meta property="og:title" content="会社概要 | 株式会社炎熟">
+  <meta property="og:description" content="株式会社炎熟の会社概要。物流業界特化のBPO・ビズデブ。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: '#0A1628', light: '#0F1D32', lighter: '#162240' },
+            accent: '#F97316',
+          },
+          fontFamily: {
+            ja: ['Noto Sans JP', 'sans-serif'],
+            en: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="company">
+
+  <!-- ========== Navigation ========== -->
+  <header class="nav-header fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="text-2xl font-bold font-en"><span class="text-accent">炎</span>熟</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html#about" class="nav-link text-sm">ABOUT</a>
+          <a href="index.html#services" class="nav-link text-sm">SERVICE</a>
+          <a href="index.html#strength" class="nav-link text-sm">STRENGTH</a>
+          <a href="index.html#flow" class="nav-link text-sm">FLOW</a>
+          <a href="company.html" class="nav-link text-sm nav-active" data-nav="company">COMPANY</a>
+          <a href="contact.html" class="btn-primary text-sm !py-2 !px-5" data-nav="contact">
+            <i class="fa-solid fa-envelope"></i>
+            お問い合わせ
+          </a>
+        </nav>
+
+        <!-- Mobile Hamburger -->
+        <div class="hamburger md:hidden">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu fixed inset-0 z-40 bg-navy/98 backdrop-blur-lg flex flex-col items-center justify-center gap-8">
+    <a href="index.html#about" class="text-xl font-semibold text-white hover:text-accent transition-colors">ABOUT</a>
+    <a href="index.html#services" class="text-xl font-semibold text-white hover:text-accent transition-colors">SERVICE</a>
+    <a href="index.html#strength" class="text-xl font-semibold text-white hover:text-accent transition-colors">STRENGTH</a>
+    <a href="index.html#flow" class="text-xl font-semibold text-white hover:text-accent transition-colors">FLOW</a>
+    <a href="company.html" class="text-xl font-semibold text-accent transition-colors">COMPANY</a>
+    <a href="contact.html" class="btn-primary mt-4">
+      <i class="fa-solid fa-envelope"></i>
+      お問い合わせ
+    </a>
+  </div>
+
+  <!-- ========== Page Header ========== -->
+  <section class="pt-32 pb-16 relative overflow-hidden grid-bg">
+    <div class="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center">
+        <span class="section-label fade-up">COMPANY</span>
+        <h1 class="section-title text-4xl sm:text-5xl mt-4 fade-up fade-up-delay-1">会社概要</h1>
+        <p class="section-description mt-6 fade-up fade-up-delay-2">
+          物流業界の課題解決に全力を注ぐ、それが炎熟です。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="gradient-divider"></div>
+
+  <!-- ========== Company Info Section ========== -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto fade-up">
+        <div class="bg-navy-light/50 border border-white/5 rounded-2xl overflow-hidden">
+          <table class="company-table">
+            <tbody>
+              <tr>
+                <th>会社名</th>
+                <td>株式会社炎熟</td>
+              </tr>
+              <tr>
+                <th>代表者</th>
+                <td>山口 大輔</td>
+              </tr>
+              <tr>
+                <th>事業内容</th>
+                <td>
+                  物流業界特化型BPO・ビジネスデベロップメント<br>
+                  ・資料作成（営業・稟議・会議・新規事業）<br>
+                  ・WMSシステム導入支援<br>
+                  ・採用計画・採用支援<br>
+                  ・新規事業開発支援<br>
+                  ・営業支援<br>
+                  ・BPO全般
+                </td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>完全成果報酬型</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gradient-divider"></div>
+
+  <!-- ========== CTA Section ========== -->
+  <section class="py-24 md:py-32 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-blue-500/5"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center fade-up">
+        <span class="section-label">GET STARTED</span>
+        <h2 class="section-title mt-4">まずは無料相談から。</h2>
+        <p class="section-description mt-6">
+          物流に関する課題なら、まずはお気軽にご相談ください。<br>
+          完全成果報酬だから、リスクはゼロです。
+        </p>
+        <div class="mt-10">
+          <a href="contact.html" class="btn-primary text-base px-10 py-4">
+            <i class="fa-solid fa-envelope"></i>
+            お問い合わせはこちら
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="border-t border-white/5 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="text-xl font-bold font-en"><span class="text-accent">炎</span>熟</span>
+          <span class="text-gray-500 text-sm ml-2">株式会社炎熟</span>
+        </a>
+
+        <!-- Links -->
+        <nav class="flex items-center gap-6">
+          <a href="index.html#about" class="footer-link">About</a>
+          <a href="index.html#services" class="footer-link">Service</a>
+          <a href="index.html#strength" class="footer-link">Strength</a>
+          <a href="company.html" class="footer-link">Company</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </nav>
+      </div>
+
+      <div class="mt-8 pt-8 border-t border-white/5 text-center">
+        <p class="text-gray-500 text-sm font-en">
+          &copy; <span id="currentYear"></span> ENJUKU Inc. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" aria-label="ページトップへ">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

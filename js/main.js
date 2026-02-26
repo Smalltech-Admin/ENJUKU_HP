@@ -3,6 +3,8 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+  const currentPage = document.body.getAttribute('data-page');
+
   // --- Loading Screen ---
   const loadingScreen = document.querySelector('.loading-screen');
   if (loadingScreen) {
@@ -31,6 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', updateNav, { passive: true });
   updateNav();
+
+  // --- Sub pages: always show scrolled header (no hero) ---
+  if (currentPage !== 'home') {
+    header.classList.add('scrolled');
+  }
 
   // --- Mobile Menu ---
   const hamburger = document.querySelector('.hamburger');
@@ -71,17 +78,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fadeElements.forEach(el => observer.observe(el));
 
-  // --- Smooth Scroll for Anchor Links ---
+  // --- Smooth Scroll for same-page anchor Links ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
-      e.preventDefault();
       const targetId = anchor.getAttribute('href');
-      if (targetId === '#') return;
+      if (targetId === '#') {
+        e.preventDefault();
+        return;
+      }
 
       const target = document.querySelector(targetId);
       if (target) {
+        e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth' });
       }
+      // If target doesn't exist on this page, let browser navigate normally
     });
   });
 
@@ -135,28 +146,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   counters.forEach(el => counterObserver.observe(el));
 
-  // --- Active Section Highlight ---
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+  // --- Active Section Highlight (home page only) ---
+  if (currentPage === 'home') {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
 
-  function highlightNav() {
-    const scrollPos = window.scrollY + 120;
+    function highlightNav() {
+      const scrollPos = window.scrollY + 120;
 
-    sections.forEach(section => {
-      const top = section.offsetTop;
-      const height = section.offsetHeight;
-      const id = section.getAttribute('id');
+      sections.forEach(section => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute('id');
 
-      if (scrollPos >= top && scrollPos < top + height) {
-        navLinks.forEach(link => {
-          link.style.color = '';
-          if (link.getAttribute('href') === '#' + id) {
-            link.style.color = '#F97316';
-          }
-        });
-      }
-    });
+        if (scrollPos >= top && scrollPos < top + height) {
+          navLinks.forEach(link => {
+            link.style.color = '';
+            if (link.getAttribute('href') === '#' + id) {
+              link.style.color = '#F97316';
+            }
+          });
+        }
+      });
+    }
+
+    window.addEventListener('scroll', highlightNav, { passive: true });
   }
-
-  window.addEventListener('scroll', highlightNav, { passive: true });
 });

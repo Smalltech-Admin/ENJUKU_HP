@@ -72,6 +72,20 @@ body {
   width: 100%;
 }
 
+/* Active nav link */
+.nav-link.nav-active {
+  color: var(--color-orange);
+}
+
+.nav-link.nav-active::after {
+  width: 100%;
+}
+
+/* Active contact button */
+.nav-active-btn {
+  box-shadow: 0 0 0 2px var(--color-orange), 0 0 12px rgba(249, 115, 22, 0.3);
+}
+
 /* --- Mobile Menu --- */
 .mobile-menu {
   transform: translateX(100%);

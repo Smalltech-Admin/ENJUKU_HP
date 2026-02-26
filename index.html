@@ -41,7 +41,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="home">
 
   <!-- ========== Loading Screen ========== -->
   <div class="loading-screen">
@@ -55,7 +55,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
-        <a href="#" class="flex items-center gap-2">
+        <a href="index.html" class="flex items-center gap-2">
           <span class="text-2xl font-bold font-en"><span class="text-accent">炎</span>熟</span>
         </a>
 
@@ -65,8 +65,8 @@
           <a href="#services" class="nav-link text-sm">SERVICE</a>
           <a href="#strength" class="nav-link text-sm">STRENGTH</a>
           <a href="#flow" class="nav-link text-sm">FLOW</a>
-          <a href="#company" class="nav-link text-sm">COMPANY</a>
-          <a href="#contact" class="btn-primary text-sm !py-2 !px-5">
+          <a href="company.html" class="nav-link text-sm" data-nav="company">COMPANY</a>
+          <a href="contact.html" class="btn-primary text-sm !py-2 !px-5" data-nav="contact">
             <i class="fa-solid fa-envelope"></i>
             お問い合わせ
           </a>
@@ -88,8 +88,8 @@
     <a href="#services" class="text-xl font-semibold text-white hover:text-accent transition-colors">SERVICE</a>
     <a href="#strength" class="text-xl font-semibold text-white hover:text-accent transition-colors">STRENGTH</a>
     <a href="#flow" class="text-xl font-semibold text-white hover:text-accent transition-colors">FLOW</a>
-    <a href="#company" class="text-xl font-semibold text-white hover:text-accent transition-colors">COMPANY</a>
-    <a href="#contact" class="btn-primary mt-4">
+    <a href="company.html" class="text-xl font-semibold text-white hover:text-accent transition-colors">COMPANY</a>
+    <a href="contact.html" class="btn-primary mt-4">
       <i class="fa-solid fa-envelope"></i>
       お問い合わせ
     </a>
@@ -122,7 +122,7 @@
             <strong class="text-white">完全成果報酬</strong>で、御社の課題をまるごと解決します。
           </p>
           <div class="flex flex-wrap gap-4 mt-10 fade-up fade-up-delay-3">
-            <a href="#contact" class="btn-primary">
+            <a href="contact.html" class="btn-primary">
               無料相談する
               <i class="fa-solid fa-arrow-right"></i>
             </a>
@@ -416,130 +416,26 @@
 
   <div class="gradient-divider"></div>
 
-  <!-- ========== Company Section ========== -->
-  <section id="company" class="py-24 md:py-32 grid-bg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <span class="section-label fade-up">COMPANY</span>
-        <h2 class="section-title mt-4 fade-up fade-up-delay-1">会社概要</h2>
-      </div>
-
-      <div class="max-w-3xl mx-auto fade-up fade-up-delay-2">
-        <div class="bg-navy-light/50 border border-white/5 rounded-2xl overflow-hidden">
-          <table class="company-table">
-            <tbody>
-              <tr>
-                <th>会社名</th>
-                <td>株式会社炎熟</td>
-              </tr>
-              <tr>
-                <th>代表者</th>
-                <td>山口 大輔</td>
-              </tr>
-              <tr>
-                <th>事業内容</th>
-                <td>
-                  物流業界特化型BPO・ビジネスデベロップメント<br>
-                  ・資料作成（営業・稟議・会議・新規事業）<br>
-                  ・WMSシステム導入支援<br>
-                  ・採用計画・採用支援<br>
-                  ・新規事業開発支援<br>
-                  ・営業支援<br>
-                  ・BPO全般
-                </td>
-              </tr>
-              <tr>
-                <th>特徴</th>
-                <td>完全成果報酬型</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="gradient-divider"></div>
-
-  <!-- ========== Contact Section ========== -->
-  <section id="contact" class="py-24 md:py-32">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <span class="section-label fade-up">CONTACT</span>
-        <h2 class="section-title mt-4 fade-up fade-up-delay-1">お問い合わせ</h2>
-        <p class="section-description mt-6 fade-up fade-up-delay-2">
-          まずは無料相談から。御社の課題をお聞かせください。<br>
-          物流のプロが最適なソリューションをご提案します。
+  <!-- ========== CTA Section ========== -->
+  <section class="py-24 md:py-32 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-blue-500/5"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center fade-up">
+        <span class="section-label">GET STARTED</span>
+        <h2 class="section-title mt-4">まずは無料相談から。</h2>
+        <p class="section-description mt-6">
+          「こんなことも頼めるの？」——はい、お任せください。<br>
+          物流に関する課題なら、まずはお気軽にご相談ください。
         </p>
-      </div>
-
-      <div class="max-w-2xl mx-auto fade-up fade-up-delay-2">
-        <div class="bg-navy-light/50 border border-white/5 rounded-2xl p-8 md:p-12">
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <div class="form-group">
-              <label class="form-label">
-                会社名
-                <span class="required">必須</span>
-              </label>
-              <input type="text" name="company" class="form-input" placeholder="例: 株式会社〇〇" required>
-            </div>
-
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div class="form-group">
-                <label class="form-label">
-                  お名前
-                  <span class="required">必須</span>
-                </label>
-                <input type="text" name="name" class="form-input" placeholder="例: 山田 太郎" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label">
-                  メールアドレス
-                  <span class="required">必須</span>
-                </label>
-                <input type="email" name="email" class="form-input" placeholder="例: info@example.com" required>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">
-                電話番号
-              </label>
-              <input type="tel" name="phone" class="form-input" placeholder="例: 03-1234-5678">
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">
-                ご相談内容
-                <span class="required">必須</span>
-              </label>
-              <select name="category" class="form-select" required>
-                <option value="" disabled selected>選択してください</option>
-                <option value="資料作成">資料作成</option>
-                <option value="WMS導入支援">WMS導入支援</option>
-                <option value="採用支援">採用計画・採用支援</option>
-                <option value="新規事業">新規事業開発支援</option>
-                <option value="営業支援">営業支援</option>
-                <option value="BPO">BPO全般</option>
-                <option value="その他">その他</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">
-                お問い合わせ内容
-                <span class="required">必須</span>
-              </label>
-              <textarea name="message" class="form-textarea" placeholder="御社の課題やご要望をお聞かせください" required></textarea>
-            </div>
-
-            <div class="text-center mt-8">
-              <button type="submit" class="btn-primary text-base px-10 py-4">
-                <i class="fa-solid fa-paper-plane"></i>
-                送信する
-              </button>
-            </div>
-          </form>
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+          <a href="contact.html" class="btn-primary text-base px-10 py-4">
+            <i class="fa-solid fa-envelope"></i>
+            お問い合わせはこちら
+          </a>
+          <a href="company.html" class="btn-outline text-base px-10 py-4">
+            <i class="fa-solid fa-building"></i>
+            会社概要を見る
+          </a>
         </div>
       </div>
     </div>
@@ -550,18 +446,18 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
         <!-- Logo -->
-        <div class="flex items-center gap-2">
+        <a href="index.html" class="flex items-center gap-2">
           <span class="text-xl font-bold font-en"><span class="text-accent">炎</span>熟</span>
           <span class="text-gray-500 text-sm ml-2">株式会社炎熟</span>
-        </div>
+        </a>
 
         <!-- Links -->
         <nav class="flex items-center gap-6">
-          <a href="#about" class="footer-link">About</a>
-          <a href="#services" class="footer-link">Service</a>
-          <a href="#strength" class="footer-link">Strength</a>
-          <a href="#company" class="footer-link">Company</a>
-          <a href="#contact" class="footer-link">Contact</a>
+          <a href="index.html#about" class="footer-link">About</a>
+          <a href="index.html#services" class="footer-link">Service</a>
+          <a href="index.html#strength" class="footer-link">Strength</a>
+          <a href="company.html" class="footer-link">Company</a>
+          <a href="contact.html" class="footer-link">Contact</a>
         </nav>
       </div>
 
