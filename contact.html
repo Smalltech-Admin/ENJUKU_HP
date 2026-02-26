@@ -93,74 +93,30 @@
 
   <div class="gradient-divider"></div>
 
-  <!-- ========== Contact Form Section ========== -->
+  <!-- ========== Contact Info Section ========== -->
   <section class="py-24 md:py-32">
     <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="max-w-2xl mx-auto fade-up">
-        <div class="bg-navy-light/50 border border-white/5 rounded-2xl p-8 md:p-12">
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <div class="form-group">
-              <label class="form-label">
-                会社名
-                <span class="required">必須</span>
-              </label>
-              <input type="text" name="company" class="form-input" placeholder="例: 株式会社〇〇" required>
-            </div>
+      <div class="max-w-2xl mx-auto">
+        <div class="grid sm:grid-cols-2 gap-8">
 
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div class="form-group">
-                <label class="form-label">
-                  お名前
-                  <span class="required">必須</span>
-                </label>
-                <input type="text" name="name" class="form-input" placeholder="例: 山田 太郎" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label">
-                  メールアドレス
-                  <span class="required">必須</span>
-                </label>
-                <input type="email" name="email" class="form-input" placeholder="例: info@example.com" required>
-              </div>
+          <!-- Email -->
+          <a href="mailto:info@enjuku.co.jp" class="fade-up block bg-navy-light/50 border border-white/5 rounded-2xl p-10 md:p-12 text-center hover:border-accent/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-accent/10 flex items-center justify-center">
+              <i class="fa-solid fa-envelope text-accent text-3xl"></i>
             </div>
+            <p class="text-gray-400 text-lg mb-2">メール</p>
+            <p class="text-white text-xl sm:text-2xl font-bold break-all">info@enjuku.co.jp</p>
+          </a>
 
-            <div class="form-group">
-              <label class="form-label">電話番号</label>
-              <input type="tel" name="phone" class="form-input" placeholder="例: 03-1234-5678">
+          <!-- Phone -->
+          <a href="tel:03-0000-0000" class="fade-up fade-up-delay-1 block bg-navy-light/50 border border-white/5 rounded-2xl p-10 md:p-12 text-center hover:border-accent/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-accent/10 flex items-center justify-center">
+              <i class="fa-solid fa-phone text-accent text-3xl"></i>
             </div>
+            <p class="text-gray-400 text-lg mb-2">電話番号</p>
+            <p class="text-white text-xl sm:text-2xl font-bold font-en">03-0000-0000</p>
+          </a>
 
-            <div class="form-group">
-              <label class="form-label">
-                ご相談内容
-                <span class="required">必須</span>
-              </label>
-              <select name="category" class="form-select" required>
-                <option value="" disabled selected>選択してください</option>
-                <option value="資料作成">資料作成</option>
-                <option value="WMS導入支援">WMS導入支援</option>
-                <option value="採用支援">採用計画・採用支援</option>
-                <option value="新規事業">新規事業開発支援</option>
-                <option value="営業支援">営業支援</option>
-                <option value="BPO">BPO全般</option>
-                <option value="その他">その他</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">
-                お問い合わせ内容
-                <span class="required">必須</span>
-              </label>
-              <textarea name="message" class="form-textarea" placeholder="御社の課題やご要望をお聞かせください" required></textarea>
-            </div>
-
-            <div class="text-center mt-8">
-              <button type="submit" class="btn-primary text-base px-10 py-4">
-                <i class="fa-solid fa-paper-plane"></i>
-                送信する
-              </button>
-            </div>
-          </form>
         </div>
       </div>
     </div>
