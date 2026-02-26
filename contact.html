@@ -46,25 +46,17 @@
   <header class="nav-header fixed top-0 left-0 right-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <!-- Logo -->
         <a href="index.html" class="flex items-center gap-2">
           <span class="text-2xl font-bold font-en"><span class="text-accent">炎</span>熟</span>
         </a>
-
-        <!-- Desktop Nav -->
         <nav class="hidden md:flex items-center gap-8">
-          <a href="index.html#about" class="nav-link text-sm">ABOUT</a>
-          <a href="index.html#services" class="nav-link text-sm">SERVICE</a>
-          <a href="index.html#strength" class="nav-link text-sm">STRENGTH</a>
-          <a href="index.html#flow" class="nav-link text-sm">FLOW</a>
-          <a href="company.html" class="nav-link text-sm" data-nav="company">COMPANY</a>
-          <a href="contact.html" class="btn-primary text-sm !py-2 !px-5 nav-active-btn" data-nav="contact">
+          <a href="index.html" class="nav-link text-sm">ABOUT</a>
+          <a href="company.html" class="nav-link text-sm">COMPANY</a>
+          <a href="contact.html" class="btn-primary text-sm !py-2 !px-5 nav-active-btn">
             <i class="fa-solid fa-envelope"></i>
             お問い合わせ
           </a>
         </nav>
-
-        <!-- Mobile Hamburger -->
         <div class="hamburger md:hidden">
           <span></span>
           <span></span>
@@ -76,10 +68,7 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu fixed inset-0 z-40 bg-navy/98 backdrop-blur-lg flex flex-col items-center justify-center gap-8">
-    <a href="index.html#about" class="text-xl font-semibold text-white hover:text-accent transition-colors">ABOUT</a>
-    <a href="index.html#services" class="text-xl font-semibold text-white hover:text-accent transition-colors">SERVICE</a>
-    <a href="index.html#strength" class="text-xl font-semibold text-white hover:text-accent transition-colors">STRENGTH</a>
-    <a href="index.html#flow" class="text-xl font-semibold text-white hover:text-accent transition-colors">FLOW</a>
+    <a href="index.html" class="text-xl font-semibold text-white hover:text-accent transition-colors">ABOUT</a>
     <a href="company.html" class="text-xl font-semibold text-white hover:text-accent transition-colors">COMPANY</a>
     <a href="contact.html" class="btn-primary mt-4 ring-2 ring-accent ring-offset-2 ring-offset-navy">
       <i class="fa-solid fa-envelope"></i>
@@ -136,9 +125,7 @@
             </div>
 
             <div class="form-group">
-              <label class="form-label">
-                電話番号
-              </label>
+              <label class="form-label">電話番号</label>
               <input type="tel" name="phone" class="form-input" placeholder="例: 03-1234-5678">
             </div>
 
@@ -183,22 +170,16 @@
   <footer class="border-t border-white/5 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <!-- Logo -->
         <a href="index.html" class="flex items-center gap-2">
           <span class="text-xl font-bold font-en"><span class="text-accent">炎</span>熟</span>
           <span class="text-gray-500 text-sm ml-2">株式会社炎熟</span>
         </a>
-
-        <!-- Links -->
         <nav class="flex items-center gap-6">
-          <a href="index.html#about" class="footer-link">About</a>
-          <a href="index.html#services" class="footer-link">Service</a>
-          <a href="index.html#strength" class="footer-link">Strength</a>
+          <a href="index.html" class="footer-link">About</a>
           <a href="company.html" class="footer-link">Company</a>
           <a href="contact.html" class="footer-link">Contact</a>
         </nav>
       </div>
-
       <div class="mt-8 pt-8 border-t border-white/5 text-center">
         <p class="text-gray-500 text-sm font-en">
           &copy; <span id="currentYear"></span> ENJUKU Inc. All rights reserved.
@@ -207,15 +188,11 @@
     </div>
   </footer>
 
-  <!-- Scroll to Top -->
   <button class="scroll-top" aria-label="ページトップへ">
     <i class="fa-solid fa-chevron-up"></i>
   </button>
 
-  <!-- JavaScript -->
   <script src="js/main.js"></script>
-  <script>
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
 </body>
 </html>
