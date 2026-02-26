@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社炎熟 | 物流業界特化のBPO・ビズデブ</title>
+  <meta name="description" content="株式会社炎熟は物流業界に特化したBPO・ビズデブ会社です。完全成果報酬で資料作成、WMS導入支援、採用支援、新規事業開発など、物流の課題をまるごと解決します。">
+  <meta name="keywords" content="物流,BPO,ビズデブ,WMS,採用支援,新規事業,営業支援,成果報酬,炎熟">
+  <meta property="og:title" content="株式会社炎熟 | 物流業界特化のBPO・ビズデブ">
+  <meta property="og:description" content="完全成果報酬で物流の課題をまるごと解決。資料作成からWMS導入、採用支援まで。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: '#0A1628', light: '#0F1D32', lighter: '#162240' },
+            accent: '#F97316',
+          },
+          fontFamily: {
+            ja: ['Noto Sans JP', 'sans-serif'],
+            en: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== Loading Screen ========== -->
+  <div class="loading-screen">
+    <div class="loading-logo">
+      <span style="color: #F97316;">炎</span>熟
+    </div>
+  </div>
+
+  <!-- ========== Navigation ========== -->
+  <header class="nav-header fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2">
+          <span class="text-2xl font-bold font-en"><span class="text-accent">炎</span>熟</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#about" class="nav-link text-sm">ABOUT</a>
+          <a href="#services" class="nav-link text-sm">SERVICE</a>
+          <a href="#strength" class="nav-link text-sm">STRENGTH</a>
+          <a href="#flow" class="nav-link text-sm">FLOW</a>
+          <a href="#company" class="nav-link text-sm">COMPANY</a>
+          <a href="#contact" class="btn-primary text-sm !py-2 !px-5">
+            <i class="fa-solid fa-envelope"></i>
+            お問い合わせ
+          </a>
+        </nav>
+
+        <!-- Mobile Hamburger -->
+        <div class="hamburger md:hidden">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu fixed inset-0 z-40 bg-navy/98 backdrop-blur-lg flex flex-col items-center justify-center gap-8">
+    <a href="#about" class="text-xl font-semibold text-white hover:text-accent transition-colors">ABOUT</a>
+    <a href="#services" class="text-xl font-semibold text-white hover:text-accent transition-colors">SERVICE</a>
+    <a href="#strength" class="text-xl font-semibold text-white hover:text-accent transition-colors">STRENGTH</a>
+    <a href="#flow" class="text-xl font-semibold text-white hover:text-accent transition-colors">FLOW</a>
+    <a href="#company" class="text-xl font-semibold text-white hover:text-accent transition-colors">COMPANY</a>
+    <a href="#contact" class="btn-primary mt-4">
+      <i class="fa-solid fa-envelope"></i>
+      お問い合わせ
+    </a>
+  </div>
+
+  <!-- ========== Hero Section ========== -->
+  <section class="hero-bg min-h-screen flex items-center relative overflow-hidden grid-bg">
+    <!-- Decorative particles -->
+    <div class="particle" style="top: 20%; left: 10%;"></div>
+    <div class="particle" style="top: 60%; left: 80%; animation-delay: -2s;"></div>
+    <div class="particle" style="top: 40%; left: 60%; animation-delay: -4s;"></div>
+    <div class="particle" style="top: 80%; left: 30%; animation-delay: -1s;"></div>
+    <div class="particle" style="top: 15%; left: 75%; animation-delay: -3s;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-0 w-full">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left: Text -->
+        <div>
+          <div class="fade-up">
+            <span class="section-label uppercase tracking-widest">Logistics × BPO</span>
+          </div>
+          <h1 class="hero-title text-4xl sm:text-5xl lg:text-6xl font-extrabold mt-6 fade-up fade-up-delay-1">
+            人がいない、<br>
+            できる人がいない。<br>
+            <span class="accent">全部、お任せ。</span>
+          </h1>
+          <p class="hero-subtitle mt-8 text-base sm:text-lg max-w-lg fade-up fade-up-delay-2">
+            物流業界に特化したBPO・ビズデブのプロフェッショナル。<br>
+            資料作成からWMS導入、採用支援まで——<br>
+            <strong class="text-white">完全成果報酬</strong>で、御社の課題をまるごと解決します。
+          </p>
+          <div class="flex flex-wrap gap-4 mt-10 fade-up fade-up-delay-3">
+            <a href="#contact" class="btn-primary">
+              無料相談する
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#services" class="btn-outline">
+              サービスを見る
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Visual -->
+        <div class="hidden md:block fade-up fade-up-delay-3">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-gradient-to-r from-accent/10 to-blue-500/10 rounded-2xl blur-2xl"></div>
+            <img
+              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&h=500&fit=crop&q=80"
+              alt="物流イメージ"
+              class="relative rounded-2xl w-full object-cover shadow-2xl"
+              style="aspect-ratio: 7/5;"
+              loading="eager"
+            >
+            <!-- Floating Badge -->
+            <div class="absolute -bottom-6 -left-6 bg-navy-light border border-white/10 rounded-xl p-4 shadow-xl">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
+                  <i class="fa-solid fa-handshake text-accent text-xl"></i>
+                </div>
+                <div>
+                  <p class="font-en font-bold text-accent text-lg">100%</p>
+                  <p class="text-xs text-gray-400">完全成果報酬</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60">
+      <span class="text-xs font-en tracking-widest text-gray-400">SCROLL</span>
+      <div class="w-px h-8 bg-gradient-to-b from-accent to-transparent"></div>
+    </div>
+  </section>
+
+  <div class="gradient-divider"></div>
+
+  <!-- ========== About Section ========== -->
+  <section id="about" class="py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="section-label fade-up">ABOUT US</span>
+        <h2 class="section-title mt-4 fade-up fade-up-delay-1">物流の現場を、もっと強く。</h2>
+        <p class="section-description mt-6 fade-up fade-up-delay-2">
+          私たちは物流業界に深く根差したBPO・ビズデブ会社です。<br>
+          業界特有の課題を理解しているからこそ、本質的な解決策を提供できます。
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left: Image -->
+        <div class="fade-up">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-gradient-to-br from-accent/5 to-transparent rounded-2xl"></div>
+            <img
+              src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=400&fit=crop&q=80"
+              alt="物流倉庫"
+              class="relative rounded-2xl w-full object-cover"
+              style="aspect-ratio: 3/2;"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div>
+          <div class="fade-up">
+            <h3 class="text-2xl font-bold mb-4">
+              <span class="text-accent">「人手不足」</span>を言い訳にしない。
+            </h3>
+            <p class="text-gray-300 leading-relaxed mb-8">
+              物流業界は深刻な人手不足に直面しています。しかし「人がいないからできない」は、もう通用しません。
+              炎熟は、資料作成・システム導入・採用・営業まで、御社に不足しているリソースとノウハウをワンストップで提供。
+              しかも<strong class="text-accent">完全成果報酬</strong>。成果が出なければ、費用はいただきません。
+            </p>
+          </div>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-6 fade-up fade-up-delay-1">
+            <div class="about-stat">
+              <span class="number" data-count="100" data-suffix="%">0%</span>
+              <span class="label">成果報酬</span>
+            </div>
+            <div class="about-stat">
+              <span class="number" data-count="50" data-suffix="+">0+</span>
+              <span class="label">支援実績</span>
+            </div>
+            <div class="about-stat">
+              <span class="number" data-count="10" data-suffix="年+">0年+</span>
+              <span class="label">業界経験</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gradient-divider"></div>
+
+  <!-- ========== Services Section ========== -->
+  <section id="services" class="py-24 md:py-32 grid-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="section-label fade-up">SERVICE</span>
+        <h2 class="section-title mt-4 fade-up fade-up-delay-1">物流に必要なこと、すべて。</h2>
+        <p class="section-description mt-6 fade-up fade-up-delay-2">
+          物流業界の課題に特化した幅広いサービスラインナップ。<br>
+          単発のタスクから事業戦略まで、必要なことを必要なだけ。
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service 1 -->
+        <div class="service-card fade-up">
+          <div class="service-icon">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+          <h3>資料作成</h3>
+          <p>営業資料・稟議書・会議資料・新規事業提案書など、あらゆるビジネス文書をプロが作成。物流業界の専門用語・業界慣習を熟知した品質をお届けします。</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card fade-up fade-up-delay-1">
+          <div class="service-icon">
+            <i class="fa-solid fa-warehouse"></i>
+          </div>
+          <h3>WMSシステム導入支援</h3>
+          <p>倉庫管理システム（WMS）の選定から導入・運用定着まで一貫サポート。現場オペレーションを理解した最適なシステム提案で、倉庫の生産性を向上させます。</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card fade-up fade-up-delay-2">
+          <div class="service-icon">
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+          <h3>採用計画・採用支援</h3>
+          <p>物流業界特有の採用課題に対応。採用計画の策定から求人設計、面接プロセス構築、人材定着施策まで、採用のPDCA全体をサポートします。</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card fade-up fade-up-delay-1">
+          <div class="service-icon">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <h3>新規事業開発支援</h3>
+          <p>物流DX・新サービス立ち上げ・新規マーケット参入など、事業開発のアイデア出しから事業計画策定、PoC実施、本格展開まで伴走します。</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card fade-up fade-up-delay-2">
+          <div class="service-icon">
+            <i class="fa-solid fa-bullhorn"></i>
+          </div>
+          <h3>営業支援</h3>
+          <p>ターゲットリスト作成、アポイント獲得、商談同行、提案資料作成まで。物流業界の商習慣を理解した営業チームが、御社の売上拡大を支援します。</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card fade-up fade-up-delay-3">
+          <div class="service-icon">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3>BPO全般</h3>
+          <p>バックオフィス業務、データ入力、カスタマーサポート、業務プロセス改善など。コア業務に集中できる環境づくりを、トータルでお任せください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gradient-divider"></div>
+
+  <!-- ========== Strength Section ========== -->
+  <section id="strength" class="strength-section py-24 md:py-32 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-16">
+        <span class="section-label fade-up">OUR STRENGTH</span>
+        <h2 class="section-title mt-4 fade-up fade-up-delay-1">最大の強み</h2>
+      </div>
+
+      <div class="text-center mb-12">
+        <div class="fade-up">
+          <span class="strength-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            リスクゼロ
+          </span>
+        </div>
+        <div class="strength-number mt-6 fade-up fade-up-delay-1">
+          完全成果報酬
+        </div>
+        <p class="text-xl md:text-2xl text-gray-300 mt-6 fade-up fade-up-delay-2">
+          成果が出なければ、<span class="text-accent font-bold">費用は一切いただきません。</span>
+        </p>
+        <p class="section-description mt-6 fade-up fade-up-delay-3">
+          私たちは自分たちの提供価値に絶対の自信を持っています。<br>
+          だからこそ、完全成果報酬というスタイルで、<br>
+          御社と同じ方向を向いてプロジェクトに取り組みます。
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-6 mt-16">
+        <div class="strength-card fade-up">
+          <div class="strength-card-icon">
+            <i class="fa-solid fa-yen-sign"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">初期費用ゼロ</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">導入コスト・月額固定費は一切なし。成果に応じた報酬体系で、無駄なコストを徹底排除。</p>
+        </div>
+        <div class="strength-card fade-up fade-up-delay-1">
+          <div class="strength-card-icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">成果にコミット</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">KPIを明確に定義し、達成に向けて全力で推進。私たちの利益は御社の成果と完全に連動します。</p>
+        </div>
+        <div class="strength-card fade-up fade-up-delay-2">
+          <div class="strength-card-icon">
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+          <h3 class="font-bold text-lg mb-2">柔軟な撤退</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">成果が出なければいつでも契約解除可能。長期縛りなし。御社に一切のリスクはありません。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gradient-divider"></div>
+
+  <!-- ========== Flow Section ========== -->
+  <section id="flow" class="py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="section-label fade-up">FLOW</span>
+        <h2 class="section-title mt-4 fade-up fade-up-delay-1">ご利用の流れ</h2>
+        <p class="section-description mt-6 fade-up fade-up-delay-2">
+          お問い合わせから成果創出まで、シンプルなステップで進行します。
+        </p>
+      </div>
+
+      <div class="max-w-2xl mx-auto space-y-8">
+        <!-- Step 1 -->
+        <div class="flow-step fade-up">
+          <div class="flow-step-number">1</div>
+          <div class="flow-step-line"></div>
+          <div class="flow-step-content">
+            <h3>無料相談・ヒアリング</h3>
+            <p>御社の課題や目標をお聞かせください。物流業界に精通したコンサルタントが、最適なソリューションをご提案します。</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flow-step fade-up fade-up-delay-1">
+          <div class="flow-step-number">2</div>
+          <div class="flow-step-line"></div>
+          <div class="flow-step-content">
+            <h3>プラン策定・KPI設定</h3>
+            <p>課題に合わせた具体的な実行プランを策定。成果報酬の基準となるKPIを明確に定義します。</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flow-step fade-up fade-up-delay-2">
+          <div class="flow-step-number">3</div>
+          <div class="flow-step-line"></div>
+          <div class="flow-step-content">
+            <h3>プロジェクト開始</h3>
+            <p>専任チームがプロジェクトを推進。定期的な進捗報告と柔軟な軌道修正で、確実に成果へ導きます。</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flow-step fade-up fade-up-delay-3">
+          <div class="flow-step-number">4</div>
+          <div class="flow-step-content">
+            <h3>成果報告・継続支援</h3>
+            <p>KPI達成状況を報告し、成果に基づく報酬を精算。必要に応じて継続的なサポートも提供します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gradient-divider"></div>
+
+  <!-- ========== Company Section ========== -->
+  <section id="company" class="py-24 md:py-32 grid-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="section-label fade-up">COMPANY</span>
+        <h2 class="section-title mt-4 fade-up fade-up-delay-1">会社概要</h2>
+      </div>
+
+      <div class="max-w-3xl mx-auto fade-up fade-up-delay-2">
+        <div class="bg-navy-light/50 border border-white/5 rounded-2xl overflow-hidden">
+          <table class="company-table">
+            <tbody>
+              <tr>
+                <th>会社名</th>
+                <td>株式会社炎熟</td>
+              </tr>
+              <tr>
+                <th>代表者</th>
+                <td>山口 大輔</td>
+              </tr>
+              <tr>
+                <th>事業内容</th>
+                <td>
+                  物流業界特化型BPO・ビジネスデベロップメント<br>
+                  ・資料作成（営業・稟議・会議・新規事業）<br>
+                  ・WMSシステム導入支援<br>
+                  ・採用計画・採用支援<br>
+                  ・新規事業開発支援<br>
+                  ・営業支援<br>
+                  ・BPO全般
+                </td>
+              </tr>
+              <tr>
+                <th>特徴</th>
+                <td>完全成果報酬型</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gradient-divider"></div>
+
+  <!-- ========== Contact Section ========== -->
+  <section id="contact" class="py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="section-label fade-up">CONTACT</span>
+        <h2 class="section-title mt-4 fade-up fade-up-delay-1">お問い合わせ</h2>
+        <p class="section-description mt-6 fade-up fade-up-delay-2">
+          まずは無料相談から。御社の課題をお聞かせください。<br>
+          物流のプロが最適なソリューションをご提案します。
+        </p>
+      </div>
+
+      <div class="max-w-2xl mx-auto fade-up fade-up-delay-2">
+        <div class="bg-navy-light/50 border border-white/5 rounded-2xl p-8 md:p-12">
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+              <label class="form-label">
+                会社名
+                <span class="required">必須</span>
+              </label>
+              <input type="text" name="company" class="form-input" placeholder="例: 株式会社〇〇" required>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="form-group">
+                <label class="form-label">
+                  お名前
+                  <span class="required">必須</span>
+                </label>
+                <input type="text" name="name" class="form-input" placeholder="例: 山田 太郎" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">
+                  メールアドレス
+                  <span class="required">必須</span>
+                </label>
+                <input type="email" name="email" class="form-input" placeholder="例: info@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                電話番号
+              </label>
+              <input type="tel" name="phone" class="form-input" placeholder="例: 03-1234-5678">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                ご相談内容
+                <span class="required">必須</span>
+              </label>
+              <select name="category" class="form-select" required>
+                <option value="" disabled selected>選択してください</option>
+                <option value="資料作成">資料作成</option>
+                <option value="WMS導入支援">WMS導入支援</option>
+                <option value="採用支援">採用計画・採用支援</option>
+                <option value="新規事業">新規事業開発支援</option>
+                <option value="営業支援">営業支援</option>
+                <option value="BPO">BPO全般</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                お問い合わせ内容
+                <span class="required">必須</span>
+              </label>
+              <textarea name="message" class="form-textarea" placeholder="御社の課題やご要望をお聞かせください" required></textarea>
+            </div>
+
+            <div class="text-center mt-8">
+              <button type="submit" class="btn-primary text-base px-10 py-4">
+                <i class="fa-solid fa-paper-plane"></i>
+                送信する
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="border-t border-white/5 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <span class="text-xl font-bold font-en"><span class="text-accent">炎</span>熟</span>
+          <span class="text-gray-500 text-sm ml-2">株式会社炎熟</span>
+        </div>
+
+        <!-- Links -->
+        <nav class="flex items-center gap-6">
+          <a href="#about" class="footer-link">About</a>
+          <a href="#services" class="footer-link">Service</a>
+          <a href="#strength" class="footer-link">Strength</a>
+          <a href="#company" class="footer-link">Company</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </nav>
+      </div>
+
+      <div class="mt-8 pt-8 border-t border-white/5 text-center">
+        <p class="text-gray-500 text-sm font-en">
+          &copy; <span id="currentYear"></span> ENJUKU Inc. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" aria-label="ページトップへ">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
