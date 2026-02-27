@@ -149,8 +149,8 @@ body {
   font-family: var(--font-en);
   color: var(--color-orange);
   letter-spacing: 0.15em;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .section-title {
@@ -645,7 +645,7 @@ body {
   }
 
   .section-label {
-    font-size: 0.9375rem;
+    font-size: 1.5rem;
   }
 
   .section-title {
@@ -756,9 +756,8 @@ body {
     padding: 1rem 2.5rem;
   }
 
-  /* Section spacing tighter on mobile */
   .section-label {
-    font-size: 0.9375rem;
+    font-size: 1.625rem;
   }
 
   /* Footer stacked */
