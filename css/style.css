@@ -20,7 +20,7 @@
 /* --- Base Styles --- */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 112px;
+  scroll-padding-top: 80px;
   font-size: 16px;
 }
 
@@ -55,8 +55,8 @@ body {
   position: relative;
   color: var(--color-gray-light);
   transition: color 0.3s ease;
-  font-size: 2.25rem;
-  font-weight: 800;
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 .nav-link::after {
@@ -528,8 +528,8 @@ body {
 .footer-link {
   color: var(--color-gray);
   transition: color 0.3s ease;
-  font-size: 2.25rem;
-  font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: 600;
 }
 
 .footer-link:hover {
@@ -768,7 +768,7 @@ body {
   }
 
   .footer-link {
-    font-size: 1.75rem;
+    font-size: 1rem;
   }
 }
 
