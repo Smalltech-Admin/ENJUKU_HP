@@ -3,397 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>株式会社炎熟 | 物流業界特化のBPO・ビズデブ</title>
-  <meta name="description" content="株式会社炎熟は物流業界に特化したBPO・ビズデブ会社です。完全成果報酬で資料作成、WMS導入支援、採用支援、新規事業開発など、物流の課題をまるごと解決します。">
-  <meta name="keywords" content="物流,BPO,ビズデブ,WMS,採用支援,新規事業,営業支援,成果報酬,炎熟">
-  <meta property="og:title" content="株式会社炎熟 | 物流業界特化のBPO・ビズデブ">
-  <meta property="og:description" content="完全成果報酬で物流の課題をまるごと解決。資料作成からWMS導入、採用支援まで。">
+  <title>株式会社炎熟 | ビジネスを「炎熟期」へ</title>
+  <meta name="description" content="株式会社炎熟は営業支援事業と物流業界特化型サービス「物流の控室」を展開。完全成果報酬でお客様の売上拡大を支援します。">
+  <meta property="og:title" content="株式会社炎熟 | ビジネスを「炎熟期」へ">
+  <meta property="og:description" content="営業支援から物流の裏方まで。炎熟があなたのビジネスを最高の状態へ。">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Tailwind CSS (CDN) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { DEFAULT: '#0A1628', light: '#0F1D32', lighter: '#162240' },
-            accent: '#F97316',
-          },
-          fontFamily: {
-            ja: ['Noto Sans JP', 'sans-serif'],
-            en: ['Inter', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="about">
-
-  <!-- ========== Loading Screen ========== -->
-  <div class="loading-screen">
-    <div class="loading-logo">
-      <span style="color: #F97316;">炎</span>熟
-    </div>
-  </div>
+<body data-page="top">
 
   <!-- ========== Navigation ========== -->
-  <header class="nav-header fixed top-0 left-0 right-0 z-50">
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-2">
-          <span class="text-white text-xl font-bold">株式会社</span><span class="text-3xl font-extrabold font-en"><span class="text-accent">炎</span>熟</span>
+  <header class="nav-header">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/logo.png" alt="炎熟ロゴ" class="nav-logo-icon">
+          <span class="nav-logo-text">炎熟</span>
         </a>
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="index.html" class="nav-link nav-active">ABOUT</a>
-          <a href="company.html" class="nav-link">COMPANY</a>
-          <a href="contact.html" class="btn-primary text-base font-bold !py-2.5 !px-6">
-            <i class="fa-solid fa-envelope"></i>
-            お問い合わせ
-          </a>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link active">TOP</a>
+          <a href="company.html" class="nav-link">会社概要</a>
+          <a href="service.html" class="nav-link">事業内容</a>
+          <a href="contact.html" class="nav-link">お問合せ</a>
         </nav>
-        <div class="hamburger md:hidden">
+        <button class="hamburger" aria-label="メニュー">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
     </div>
   </header>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu fixed inset-0 z-40 bg-navy/98 backdrop-blur-lg flex flex-col items-center justify-center gap-8">
-    <a href="index.html" class="text-xl font-bold text-accent transition-colors">ABOUT</a>
-    <a href="company.html" class="text-xl font-bold text-white hover:text-accent transition-colors">COMPANY</a>
-    <a href="contact.html" class="btn-primary mt-4">
-      <i class="fa-solid fa-envelope"></i>
-      お問い合わせ
-    </a>
+  <div class="mobile-menu">
+    <a href="index.html" class="active">TOP</a>
+    <a href="company.html">会社概要</a>
+    <a href="service.html">事業内容</a>
+    <a href="contact.html">お問合せ</a>
   </div>
 
   <!-- ========== Hero Section ========== -->
-  <section class="hero-bg min-h-screen flex items-center relative overflow-hidden grid-bg">
-    <div class="particle" style="top: 20%; left: 10%;"></div>
-    <div class="particle" style="top: 60%; left: 80%; animation-delay: -2s;"></div>
-    <div class="particle" style="top: 40%; left: 60%; animation-delay: -4s;"></div>
-    <div class="particle" style="top: 80%; left: 30%; animation-delay: -1s;"></div>
-    <div class="particle" style="top: 15%; left: 75%; animation-delay: -3s;"></div>
-
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 py-32 md:py-0 w-full">
-      <div class="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-x-12 md:gap-y-4 lg:gap-x-16 items-center">
-        <!-- Label -->
-        <div class="fade-up">
-          <span class="section-label uppercase tracking-widest">Logistics × BPO</span>
-        </div>
-
-        <!-- Image: モバイルではラベルの下、デスクトップでは右列 -->
-        <div class="md:col-start-2 md:row-start-1 md:row-span-2 fade-up fade-up-delay-1">
-          <div class="relative md:scale-100 lg:scale-[1.15] lg:origin-center">
-            <div class="absolute -inset-4 bg-gradient-to-r from-accent/10 to-blue-500/10 rounded-2xl blur-2xl"></div>
-            <img
-              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1000&h=750&fit=crop&q=80"
-              alt="物流イメージ"
-              class="relative rounded-2xl w-full object-cover shadow-2xl"
-              style="aspect-ratio: 4/3;"
-              loading="eager"
-            >
-          </div>
-        </div>
-
-        <!-- Title + Subtitle + Buttons -->
-        <div>
-          <h1 class="hero-title text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold fade-up fade-up-delay-1 whitespace-nowrap">
-            人がいない、<br>
-            できる人がいない。<br>
-            <span class="accent">全部、お任せ。</span>
-          </h1>
-          <p class="hero-subtitle mt-8 text-lg sm:text-xl max-w-xl fade-up fade-up-delay-2">
-            物流業界に特化したBPO・ビズデブのプロフェッショナル。<br>
-            資料作成からWMS導入、採用支援まで——<br>
-            <strong class="text-white">完全成果報酬</strong>で、御社の課題をまるごと解決します。
-          </p>
-          <div class="flex flex-wrap gap-4 mt-10 fade-up fade-up-delay-3">
-            <a href="contact.html" class="btn-primary">
-              無料相談する
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="#services" class="btn-outline">
-              サービスを見る
-              <i class="fa-solid fa-chevron-down"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60">
-      <span class="text-sm font-en tracking-widest text-gray-400">SCROLL</span>
-      <div class="w-px h-8 bg-gradient-to-b from-accent to-transparent"></div>
-    </div>
-  </section>
-
-  <div class="gradient-divider"></div>
-
-  <!-- ========== About Section ========== -->
-  <section id="about" class="py-24 md:py-32">
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="text-center mb-16">
-        <span class="section-label fade-up">ABOUT US</span>
-        <h2 class="section-title mt-4 fade-up fade-up-delay-1">物流の現場を、もっと強く。</h2>
-        <p class="section-description mt-6 fade-up fade-up-delay-2">
-          私たちは物流業界に深く根差したBPO・ビズデブ会社です。<br>
-          業界特有の課題を理解しているからこそ、本質的な解決策を提供できます。
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="fade-up">
-          <div class="relative">
-            <div class="absolute -inset-4 bg-gradient-to-br from-accent/5 to-transparent rounded-2xl"></div>
-            <img
-              src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=400&fit=crop&q=80"
-              alt="物流倉庫"
-              class="relative rounded-2xl w-full object-cover"
-              style="aspect-ratio: 3/2;"
-              loading="lazy"
-            >
-          </div>
-        </div>
-
-        <div>
-          <div class="fade-up">
-            <h3 class="text-2xl sm:text-3xl font-bold mb-6">
-              <span class="text-accent">「人手不足」</span>を言い訳にしない。
-            </h3>
-            <p class="text-gray-300 leading-relaxed mb-8 text-lg">
-              物流業界は深刻な人手不足に直面しています。しかし「人がいないからできない」は、もう通用しません。
-              炎熟は、資料作成・システム導入・採用・営業まで、御社に不足しているリソースとノウハウをワンストップで提供。
-              しかも<strong class="text-accent">完全成果報酬</strong>。成果が出なければ、費用はいただきません。
-            </p>
-          </div>
-
-          <div class="fade-up fade-up-delay-1">
-            <div class="about-stat">
-              <span class="number" data-count="100" data-suffix="%">0%</span>
-              <span class="label">成果報酬</span>
-            </div>
-          </div>
-        </div>
+  <section class="hero" style="background-image: url('assets/hero.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-catch fade-up">
+        <span class="accent">「炎熟期」</span>へ、共に。
+      </h1>
+      <p class="hero-sub fade-up fade-up-d1">
+        円熟期とは、職人やアスリートが経験と技を最高に研ぎ澄ました状態。<br>
+        私たちは、あなたのビジネスをその領域へ押し上げる伴走者です。
+      </p>
+      <div class="fade-up fade-up-d2">
+        <a href="contact.html" class="btn-primary">お問合せはこちら</a>
       </div>
     </div>
   </section>
 
-  <div class="gradient-divider"></div>
+  <!-- ========== Vision / Mission ========== -->
+  <section class="fade-up">
+    <div class="vm-grid">
+      <div class="vm-card vm-card-vision">
+        <div class="vm-label font-display">VISION</div>
+        <p class="vm-text">様々なサービスの<br>一助になる</p>
+      </div>
+      <div class="vm-card vm-card-mission">
+        <div class="vm-label font-display">MISSION</div>
+        <p class="vm-text">とにかく事業の<br>売上を創る</p>
+      </div>
+    </div>
+  </section>
 
-  <!-- ========== Services Section ========== -->
-  <section id="services" class="py-24 md:py-32 grid-bg">
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="text-center mb-16">
-        <span class="section-label fade-up">SERVICE</span>
-        <h2 class="section-title mt-4 fade-up fade-up-delay-1">物流に必要なこと、すべて。</h2>
-        <p class="section-description mt-6 fade-up fade-up-delay-2">
-          物流業界の課題に特化した幅広いサービスラインナップ。<br>
-          単発のタスクから事業戦略まで、必要なことを必要なだけ。
-        </p>
+  <!-- ========== 事業紹介ショート ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label font-display fade-up">SERVICE</div>
+        <h2 class="section-title fade-up fade-up-d1">私たちの事業</h2>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="service-cards">
         <div class="service-card fade-up">
-          <div class="service-icon"><i class="fa-solid fa-file-lines"></i></div>
-          <h3>資料作成</h3>
-          <p>営業資料・稟議書・会議資料・新規事業提案書など、あらゆるビジネス文書をプロが作成。物流業界の専門用語・業界慣習を熟知した品質をお届けします。</p>
+          <h3>営業支援事業</h3>
+          <p>戦略立案から実働まで一括支援。競合調査・営業実働・サービス改善・研修まで、PLを底上げする営業パートナー。</p>
+          <a href="service.html" class="link-arrow">詳しく見る</a>
         </div>
-        <div class="service-card fade-up fade-up-delay-1">
-          <div class="service-icon"><i class="fa-solid fa-warehouse"></i></div>
-          <h3>WMSシステム導入支援</h3>
-          <p>倉庫管理システム（WMS）の選定から導入・運用定着まで一貫サポート。現場オペレーションを理解した最適なシステム提案で、倉庫の生産性を向上させます。</p>
-        </div>
-        <div class="service-card fade-up fade-up-delay-2">
-          <div class="service-icon"><i class="fa-solid fa-user-plus"></i></div>
-          <h3>採用計画・採用支援</h3>
-          <p>物流業界特有の採用課題に対応。採用計画の策定から求人設計、面接プロセス構築、人材定着施策まで、採用のPDCA全体をサポートします。</p>
-        </div>
-        <div class="service-card fade-up fade-up-delay-1">
-          <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
-          <h3>新規事業開発支援</h3>
-          <p>物流DX・新サービス立ち上げ・新規マーケット参入など、事業開発のアイデア出しから事業計画策定、PoC実施、本格展開まで伴走します。</p>
-        </div>
-        <div class="service-card fade-up fade-up-delay-2">
-          <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
-          <h3>営業支援</h3>
-          <p>ターゲットリスト作成、アポイント獲得、商談同行、提案資料作成まで。物流業界の商習慣を理解した営業チームが、御社の売上拡大を支援します。</p>
-        </div>
-        <div class="service-card fade-up fade-up-delay-3">
-          <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
-          <h3>BPO全般</h3>
-          <p>バックオフィス業務、データ入力、カスタマーサポート、業務プロセス改善など。コア業務に集中できる環境づくりを、トータルでお任せください。</p>
+        <div class="service-card fade-up fade-up-d1">
+          <h3>物流の控室</h3>
+          <p>物流業界特化の裏方サービス。WMS導入・採用支援・新規事業開発・営業支援まで、物流の「何でも屋」。</p>
+          <a href="service.html#hikaeshitsu" class="link-arrow">詳しく見る</a>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="gradient-divider"></div>
-
-  <!-- ========== Strength Section ========== -->
-  <section id="strength" class="strength-section py-24 md:py-32 relative">
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-      <div class="text-center mb-16">
-        <span class="section-label fade-up">OUR STRENGTH</span>
-        <h2 class="section-title mt-4 fade-up fade-up-delay-1">最大の強み</h2>
+  <!-- ========== 実績ハイライト ========== -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label font-display fade-up">RESULTS</div>
+        <h2 class="section-title fade-up fade-up-d1">実績</h2>
       </div>
 
-      <div class="text-center mb-12">
-        <div class="fade-up">
-          <span class="strength-badge">
-            <i class="fa-solid fa-shield-halved"></i>
-            リスクゼロ
-          </span>
+      <div class="stats-grid fade-up fade-up-d2">
+        <div class="stat-item">
+          <div class="stat-number" data-count="85.7" data-suffix="%" data-decimal="1">0%</div>
+          <div class="stat-label">企業様満足度</div>
         </div>
-        <div class="strength-number mt-6 fade-up fade-up-delay-1">完全成果報酬</div>
-        <p class="text-2xl md:text-3xl text-gray-300 mt-8 fade-up fade-up-delay-2">
-          成果が出なければ、<span class="text-accent font-bold">費用は一切いただきません。</span>
-        </p>
-        <p class="section-description mt-6 fade-up fade-up-delay-3">
-          私たちは自分たちの提供価値に絶対の自信を持っています。<br>
-          だからこそ、完全成果報酬というスタイルで、<br>
-          御社と同じ方向を向いてプロジェクトに取り組みます。
-        </p>
-      </div>
-
-      <div class="grid sm:grid-cols-3 gap-6 mt-16">
-        <div class="strength-card fade-up">
-          <div class="strength-card-icon"><i class="fa-solid fa-yen-sign"></i></div>
-          <h3 class="font-bold text-xl mb-3">初期費用ゼロ</h3>
-          <p class="text-gray-400 text-base leading-relaxed">導入コスト・月額固定費は一切なし。成果に応じた報酬体系で、無駄なコストを徹底排除。</p>
-        </div>
-        <div class="strength-card fade-up fade-up-delay-1">
-          <div class="strength-card-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <h3 class="font-bold text-xl mb-3">成果にコミット</h3>
-          <p class="text-gray-400 text-base leading-relaxed">KPIを明確に定義し、達成に向けて全力で推進。私たちの利益は御社の成果と完全に連動します。</p>
-        </div>
-        <div class="strength-card fade-up fade-up-delay-2">
-          <div class="strength-card-icon"><i class="fa-solid fa-rotate"></i></div>
-          <h3 class="font-bold text-xl mb-3">柔軟な撤退</h3>
-          <p class="text-gray-400 text-base leading-relaxed">成果が出なければいつでも契約解除可能。長期縛りなし。御社に一切のリスクはありません。</p>
+        <div class="stat-item">
+          <div class="stat-number" data-count="30" data-suffix="社以上">0</div>
+          <div class="stat-label">支援実績</div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <div class="gradient-divider"></div>
-
-  <!-- ========== Flow Section ========== -->
-  <section id="flow" class="py-24 md:py-32">
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="text-center mb-16">
-        <span class="section-label fade-up">FLOW</span>
-        <h2 class="section-title mt-4 fade-up fade-up-delay-1">ご利用の流れ</h2>
-        <p class="section-description mt-6 fade-up fade-up-delay-2">
-          お問い合わせから成果創出まで、シンプルなステップで進行します。
-        </p>
-      </div>
-
-      <div class="max-w-2xl mx-auto space-y-8">
-        <div class="flow-step fade-up">
-          <div class="flow-step-number">1</div>
-          <div class="flow-step-line"></div>
-          <div class="flow-step-content">
-            <h3>無料相談・ヒアリング</h3>
-            <p>御社の課題や目標をお聞かせください。物流業界に精通したコンサルタントが、最適なソリューションをご提案します。</p>
-          </div>
-        </div>
-        <div class="flow-step fade-up fade-up-delay-1">
-          <div class="flow-step-number">2</div>
-          <div class="flow-step-line"></div>
-          <div class="flow-step-content">
-            <h3>プラン策定・KPI設定</h3>
-            <p>課題に合わせた具体的な実行プランを策定。成果報酬の基準となるKPIを明確に定義します。</p>
-          </div>
-        </div>
-        <div class="flow-step fade-up fade-up-delay-2">
-          <div class="flow-step-number">3</div>
-          <div class="flow-step-line"></div>
-          <div class="flow-step-content">
-            <h3>プロジェクト開始</h3>
-            <p>専任チームがプロジェクトを推進。定期的な進捗報告と柔軟な軌道修正で、確実に成果へ導きます。</p>
-          </div>
-        </div>
-        <div class="flow-step fade-up fade-up-delay-3">
-          <div class="flow-step-number">4</div>
-          <div class="flow-step-content">
-            <h3>成果報告・継続支援</h3>
-            <p>KPI達成状況を報告し、成果に基づく報酬を精算。必要に応じて継続的なサポートも提供します。</p>
-          </div>
-        </div>
+      <!-- ロゴウォール -->
+      <div class="logo-wall fade-up fade-up-d3">
+        <div class="logo-wall-item"><img src="assets/logos/peers.png" alt="Peers"></div>
+        <div class="logo-wall-item"><img src="assets/logos/the_meo.png" alt="THE MEO"></div>
+        <div class="logo-wall-item"><img src="assets/logos/eleven_links.png" alt="ELEVEN LINKS"></div>
+        <div class="logo-wall-item"><img src="assets/logos/postal_club.png" alt="ポスタルくらぶ"></div>
+        <div class="logo-wall-item"><img src="assets/logos/work_you.png" alt="Work you"></div>
+        <div class="logo-wall-item"><img src="assets/logos/kodawari.png" alt="こだわり本舗"></div>
+        <div class="logo-wall-item"><img src="assets/logos/sincere.png" alt="SINCERE"></div>
+        <div class="logo-wall-item"><img src="assets/logos/smart_media.png" alt="Smart media"></div>
+        <div class="logo-wall-item"><img src="assets/logos/telwi.png" alt="株式会社テルヰ"></div>
+        <div class="logo-wall-item"><img src="assets/logos/vhr.png" alt="VHR"></div>
+        <div class="logo-wall-item"><img src="assets/logos/vanavana.png" alt="vanavana"></div>
+        <div class="logo-wall-item"><img src="assets/logos/jfaa.png" alt="日本フリーエージェント協会"></div>
+        <div class="logo-wall-item"><img src="assets/logos/animal_hr.png" alt="日本動物病院人事協会"></div>
+        <div class="logo-wall-item"><img src="assets/logos/sharing_energy.png" alt="Sharing Energy"></div>
+        <div class="logo-wall-item"><img src="assets/logos/nicigas.png" alt="NICIGAS"></div>
+        <div class="logo-wall-item"><img src="assets/logos/emishiya.png" alt="emishiya"></div>
+        <div class="logo-wall-item"><img src="assets/logos/tsumugu.png" alt="TSUMUGU WORKS"></div>
+        <div class="logo-wall-item"><img src="assets/logos/infocom.png" alt="infocom"></div>
+        <div class="logo-wall-item"><img src="assets/logos/writeup.png" alt="Writeup"></div>
+        <div class="logo-wall-item"><img src="assets/logos/hyper.png" alt="HypeR"></div>
+        <div class="logo-wall-item"><img src="assets/logos/daisho.png" alt="DAISHO CORPORATION"></div>
+        <div class="logo-wall-item"><img src="assets/logos/nine_partners.png" alt="Nine Partners"></div>
+        <div class="logo-wall-item"><img src="assets/logos/rocking_horse.png" alt="Rocking Horse"></div>
+        <div class="logo-wall-item"><img src="assets/logos/elderro.png" alt="エルデロ"></div>
+        <div class="logo-wall-item"><img src="assets/logos/helpfeel.png" alt="Helpfeel"></div>
+        <div class="logo-wall-item"><img src="assets/logos/gramn.png" alt="Gramn"></div>
+        <div class="logo-wall-item"><img src="assets/logos/ikiiki.png" alt="ikiiki"></div>
+        <div class="logo-wall-item"><img src="assets/logos/torimatu.png" alt="三代目 鳥松"></div>
+        <div class="logo-wall-item"><img src="assets/logos/showa_gas.png" alt="昭和ガス株式会社"></div>
+        <div class="logo-wall-item"><img src="assets/logos/study_at.png" alt="学習塾 Study at"></div>
+        <div class="logo-wall-item"><img src="assets/logos/crystal_method.png" alt="Crystal-Method"></div>
       </div>
     </div>
   </section>
 
-  <div class="gradient-divider"></div>
-
-  <!-- ========== CTA Section ========== -->
-  <section class="py-24 md:py-32 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-blue-500/5"></div>
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-      <div class="text-center fade-up">
-        <span class="section-label">GET STARTED</span>
-        <h2 class="section-title mt-4">まずは無料相談から。</h2>
-        <p class="section-description mt-6">
-          「こんなことも頼めるの？」——はい、お任せください。<br>
-          物流に関する課題なら、まずはお気軽にご相談ください。
-        </p>
-        <div class="flex flex-wrap justify-center gap-4 mt-10">
-          <a href="contact.html" class="btn-primary text-lg px-12 py-5">
-            <i class="fa-solid fa-envelope"></i>
-            お問い合わせはこちら
-          </a>
-          <a href="company.html" class="btn-outline text-lg px-12 py-5">
-            <i class="fa-solid fa-building"></i>
-            会社概要を見る
-          </a>
-        </div>
-      </div>
+  <!-- ========== CTA ========== -->
+  <section class="section-red cta-section">
+    <div class="container fade-up">
+      <h2>まずはお気軽にご相談ください</h2>
+      <p>営業の課題、物流の課題、なんでもご相談ください。<br>完全成果報酬で、御社の成長を支援します。</p>
+      <a href="contact.html" class="btn-white">お問合せはこちら</a>
     </div>
   </section>
 
   <!-- ========== Footer ========== -->
-  <footer class="border-t border-white/5 py-12">
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <a href="index.html" class="flex items-center gap-2">
-          <span class="text-xl font-bold font-en"><span class="text-accent">炎</span>熟</span>
-          <span class="text-gray-500 text-sm ml-2">株式会社炎熟</span>
-        </a>
-        <nav class="flex items-center gap-6">
-          <a href="index.html" class="footer-link">About</a>
-          <a href="company.html" class="footer-link">Company</a>
-          <a href="contact.html" class="footer-link">Contact</a>
-        </nav>
-      </div>
-      <div class="mt-8 pt-8 border-t border-white/5 text-center">
-        <p class="text-gray-500 text-sm font-en">
-          &copy; 2026 株式会社炎熟. All rights reserved.
-        </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-company">株式会社炎熟</div>
+        <div class="footer-info">
+          東京都渋谷区円山町6-7 アムフラット渋谷1F<br>
+          <a href="mailto:d-yamaguchi@en-juku.com">d-yamaguchi@en-juku.com</a>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2021 炎熟 All Rights Reserved.
+        </div>
       </div>
     </div>
   </footer>
 
-  <button class="scroll-top" aria-label="ページトップへ">
-    <i class="fa-solid fa-chevron-up"></i>
-  </button>
+  <button class="scroll-top" aria-label="ページトップへ">↑</button>
 
   <script src="js/main.js"></script>
 </body>

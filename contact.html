@@ -3,39 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お問い合わせ | 株式会社炎熟</title>
-  <meta name="description" content="株式会社炎熟へのお問い合わせ。物流業界の課題解決、BPO・ビズデブのご相談はこちらから。完全成果報酬で対応します。">
-  <meta property="og:title" content="お問い合わせ | 株式会社炎熟">
-  <meta property="og:description" content="物流業界の課題解決のご相談はこちら。完全成果報酬で対応。">
+  <title>お問合せ | 株式会社炎熟</title>
+  <meta name="description" content="株式会社炎熟へのお問合せ。営業支援・物流サービスのご相談はメールまたはお電話にて。">
+  <meta property="og:title" content="お問合せ | 株式会社炎熟">
+  <meta property="og:description" content="炎熟へのお問合せはこちら。メールまたはお電話でお気軽にどうぞ。">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Tailwind CSS (CDN) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { DEFAULT: '#0A1628', light: '#0F1D32', lighter: '#162240' },
-            accent: '#F97316',
-          },
-          fontFamily: {
-            ja: ['Noto Sans JP', 'sans-serif'],
-            en: ['Inter', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -43,110 +21,131 @@
 <body data-page="contact">
 
   <!-- ========== Navigation ========== -->
-  <header class="nav-header fixed top-0 left-0 right-0 z-50">
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-2">
-          <span class="text-white text-xl font-bold">株式会社</span><span class="text-3xl font-extrabold font-en"><span class="text-accent">炎</span>熟</span>
+  <header class="nav-header scrolled">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/logo.png" alt="炎熟ロゴ" class="nav-logo-icon">
+          <span class="nav-logo-text">炎熟</span>
         </a>
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="index.html" class="nav-link">ABOUT</a>
-          <a href="company.html" class="nav-link">COMPANY</a>
-          <a href="contact.html" class="btn-primary text-base font-bold !py-2.5 !px-6 nav-active-btn">
-            <i class="fa-solid fa-envelope"></i>
-            お問い合わせ
-          </a>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">TOP</a>
+          <a href="company.html" class="nav-link">会社概要</a>
+          <a href="service.html" class="nav-link">事業内容</a>
+          <a href="contact.html" class="nav-link active">お問合せ</a>
         </nav>
-        <div class="hamburger md:hidden">
+        <button class="hamburger" aria-label="メニュー">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
     </div>
   </header>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu fixed inset-0 z-40 bg-navy/98 backdrop-blur-lg flex flex-col items-center justify-center gap-8">
-    <a href="index.html" class="text-xl font-bold text-white hover:text-accent transition-colors">ABOUT</a>
-    <a href="company.html" class="text-xl font-bold text-white hover:text-accent transition-colors">COMPANY</a>
-    <a href="contact.html" class="btn-primary mt-4 ring-2 ring-accent ring-offset-2 ring-offset-navy">
-      <i class="fa-solid fa-envelope"></i>
-      お問い合わせ
-    </a>
+  <div class="mobile-menu">
+    <a href="index.html">TOP</a>
+    <a href="company.html">会社概要</a>
+    <a href="service.html">事業内容</a>
+    <a href="contact.html" class="active">お問合せ</a>
   </div>
 
   <!-- ========== Page Header ========== -->
-  <section class="pt-32 pb-16 relative overflow-hidden grid-bg">
-    <div class="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent"></div>
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-      <div class="text-center">
-        <span class="section-label fade-up">CONTACT</span>
-        <h1 class="section-title text-4xl sm:text-5xl lg:text-6xl mt-4 fade-up fade-up-delay-1">お問い合わせ</h1>
-        <p class="section-description mt-6 fade-up fade-up-delay-2">
-          まずは無料相談から。御社の課題をお聞かせください。<br>
-          物流のプロが最適なソリューションをご提案します。
-        </p>
-      </div>
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-label font-display fade-up">CONTACT</div>
+      <h1 class="page-header-title fade-up fade-up-d1">お問合せ</h1>
     </div>
   </section>
 
-  <div class="gradient-divider"></div>
+  <!-- ========== サービスフロー ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label font-display fade-up">FLOW</div>
+        <h2 class="section-title fade-up fade-up-d1">まずはお気軽にご相談ください</h2>
+        <p class="section-description fade-up fade-up-d2">
+          お問合せからサービス開始までの流れをご紹介します。
+        </p>
+      </div>
 
-  <!-- ========== Contact Info Section ========== -->
-  <section class="py-24 md:py-32">
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="max-w-2xl mx-auto">
-        <div class="grid sm:grid-cols-2 gap-8">
-
-          <!-- Email -->
-          <a href="mailto:info@enjuku.co.jp" class="fade-up block bg-navy-light/50 border border-white/5 rounded-2xl p-10 md:p-12 text-center hover:border-accent/30 transition-all duration-300 hover:-translate-y-1">
-            <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-accent/10 flex items-center justify-center">
-              <i class="fa-solid fa-envelope text-accent text-3xl"></i>
-            </div>
-            <p class="text-gray-400 text-lg mb-2">メール</p>
-            <p class="text-white text-xl sm:text-2xl font-bold break-all">info@enjuku.co.jp</p>
-          </a>
-
-          <!-- Phone -->
-          <a href="tel:03-0000-0000" class="fade-up fade-up-delay-1 block bg-navy-light/50 border border-white/5 rounded-2xl p-10 md:p-12 text-center hover:border-accent/30 transition-all duration-300 hover:-translate-y-1">
-            <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-accent/10 flex items-center justify-center">
-              <i class="fa-solid fa-phone text-accent text-3xl"></i>
-            </div>
-            <p class="text-gray-400 text-lg mb-2">電話番号</p>
-            <p class="text-white text-xl sm:text-2xl font-bold font-en">03-0000-0000</p>
-          </a>
-
+      <!-- 5ステップ -->
+      <div class="contact-steps fade-up fade-up-d3">
+        <div class="contact-step">
+          <div class="contact-step-num font-display">STEP 1</div>
+          <h4>ヒアリング</h4>
+          <p>課題や目標を<br>お聞かせください</p>
+          <span class="contact-step-arrow">→</span>
+        </div>
+        <div class="contact-step">
+          <div class="contact-step-num font-display">STEP 2</div>
+          <h4>ご提案・お見積もり</h4>
+          <p>最適なプランを<br>ご提案します</p>
+          <span class="contact-step-arrow">→</span>
+        </div>
+        <div class="contact-step">
+          <div class="contact-step-num font-display">STEP 3</div>
+          <h4>ご契約・発注</h4>
+          <p>ご納得いただいてから<br>スタート</p>
+          <span class="contact-step-arrow">→</span>
+        </div>
+        <div class="contact-step">
+          <div class="contact-step-num font-display">STEP 4</div>
+          <h4>稼働</h4>
+          <p>専任チームが<br>プロジェクト推進</p>
+          <span class="contact-step-arrow">→</span>
+        </div>
+        <div class="contact-step">
+          <div class="contact-step-num font-display">STEP 5</div>
+          <h4>その後</h4>
+          <p>継続支援・<br>アフターフォロー</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== Footer ========== -->
-  <footer class="border-t border-white/5 py-12">
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <a href="index.html" class="flex items-center gap-2">
-          <span class="text-xl font-bold font-en"><span class="text-accent">炎</span>熟</span>
-          <span class="text-gray-500 text-sm ml-2">株式会社炎熟</span>
-        </a>
-        <nav class="flex items-center gap-6">
-          <a href="index.html" class="footer-link">About</a>
-          <a href="company.html" class="footer-link">Company</a>
-          <a href="contact.html" class="footer-link">Contact</a>
-        </nav>
+  <!-- ========== 連絡先カード ========== -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label font-display fade-up">GET IN TOUCH</div>
+        <h2 class="section-title fade-up fade-up-d1">ご連絡はこちら</h2>
       </div>
-      <div class="mt-8 pt-8 border-t border-white/5 text-center">
-        <p class="text-gray-500 text-sm font-en">
-          &copy; 2026 株式会社炎熟. All rights reserved.
-        </p>
+
+      <div class="contact-cards fade-up fade-up-d2">
+        <a href="mailto:d-yamaguchi@en-juku.com" class="contact-card">
+          <div class="contact-card-icon">&#9993;</div>
+          <div class="contact-card-label">メールでのお問合せ</div>
+          <div class="contact-card-value">d-yamaguchi@en-juku.com</div>
+        </a>
+        <a href="tel:000-0000-0000" class="contact-card">
+          <div class="contact-card-icon">&#9742;</div>
+          <div class="contact-card-label">お電話でのお問合せ</div>
+          <div class="contact-card-value font-display" style="font-size: 1.5rem; letter-spacing: 0.05em;">000-0000-0000</div>
+          <div class="contact-card-note">受付時間：平日 10:00〜18:00</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-company">株式会社炎熟</div>
+        <div class="footer-info">
+          東京都渋谷区円山町6-7 アムフラット渋谷1F<br>
+          <a href="mailto:d-yamaguchi@en-juku.com">d-yamaguchi@en-juku.com</a>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2021 炎熟 All Rights Reserved.
+        </div>
       </div>
     </div>
   </footer>
 
-  <button class="scroll-top" aria-label="ページトップへ">
-    <i class="fa-solid fa-chevron-up"></i>
-  </button>
+  <button class="scroll-top" aria-label="ページトップへ">↑</button>
 
   <script src="js/main.js"></script>
 </body>

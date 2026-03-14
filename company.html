@@ -4,38 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>会社概要 | 株式会社炎熟</title>
-  <meta name="description" content="株式会社炎熟の会社概要。物流業界に特化したBPO・ビズデブ会社として、完全成果報酬で御社の課題を解決します。">
+  <meta name="description" content="株式会社炎熟の会社概要。営業支援事業と物流業界特化型サービスを展開する、ビジネスの伴走者です。">
   <meta property="og:title" content="会社概要 | 株式会社炎熟">
-  <meta property="og:description" content="株式会社炎熟の会社概要。物流業界特化のBPO・ビズデブ。">
+  <meta property="og:description" content="株式会社炎熟の会社概要・チームメンバー紹介。">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Tailwind CSS (CDN) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { DEFAULT: '#0A1628', light: '#0F1D32', lighter: '#162240' },
-            accent: '#F97316',
-          },
-          fontFamily: {
-            ja: ['Noto Sans JP', 'sans-serif'],
-            en: ['Inter', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -43,137 +21,172 @@
 <body data-page="company">
 
   <!-- ========== Navigation ========== -->
-  <header class="nav-header fixed top-0 left-0 right-0 z-50">
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-2">
-          <span class="text-white text-xl font-bold">株式会社</span><span class="text-3xl font-extrabold font-en"><span class="text-accent">炎</span>熟</span>
+  <header class="nav-header scrolled">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/logo.png" alt="炎熟ロゴ" class="nav-logo-icon">
+          <span class="nav-logo-text">炎熟</span>
         </a>
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="index.html" class="nav-link">ABOUT</a>
-          <a href="company.html" class="nav-link nav-active">COMPANY</a>
-          <a href="contact.html" class="btn-primary text-base font-bold !py-2.5 !px-6">
-            <i class="fa-solid fa-envelope"></i>
-            お問い合わせ
-          </a>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">TOP</a>
+          <a href="company.html" class="nav-link active">会社概要</a>
+          <a href="service.html" class="nav-link">事業内容</a>
+          <a href="contact.html" class="nav-link">お問合せ</a>
         </nav>
-        <div class="hamburger md:hidden">
+        <button class="hamburger" aria-label="メニュー">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
     </div>
   </header>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu fixed inset-0 z-40 bg-navy/98 backdrop-blur-lg flex flex-col items-center justify-center gap-8">
-    <a href="index.html" class="text-xl font-bold text-white hover:text-accent transition-colors">ABOUT</a>
-    <a href="company.html" class="text-xl font-bold text-accent transition-colors">COMPANY</a>
-    <a href="contact.html" class="btn-primary mt-4">
-      <i class="fa-solid fa-envelope"></i>
-      お問い合わせ
-    </a>
+  <div class="mobile-menu">
+    <a href="index.html">TOP</a>
+    <a href="company.html" class="active">会社概要</a>
+    <a href="service.html">事業内容</a>
+    <a href="contact.html">お問合せ</a>
   </div>
 
   <!-- ========== Page Header ========== -->
-  <section class="pt-32 pb-16 relative overflow-hidden grid-bg">
-    <div class="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent"></div>
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-      <div class="text-center">
-        <span class="section-label fade-up">COMPANY</span>
-        <h1 class="section-title text-4xl sm:text-5xl lg:text-6xl mt-4 fade-up fade-up-delay-1">会社概要</h1>
-        <p class="section-description mt-6 fade-up fade-up-delay-2">
-          物流業界の課題解決に全力を注ぐ、それが炎熟です。
-        </p>
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-label font-display fade-up">COMPANY</div>
+      <h1 class="page-header-title fade-up fade-up-d1">会社概要</h1>
+    </div>
+  </section>
+
+  <!-- ========== Company Info ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label font-display fade-up">OVERVIEW</div>
+        <h2 class="section-title fade-up fade-up-d1">基本情報</h2>
+      </div>
+
+      <div class="fade-up fade-up-d2" style="max-width: 800px; margin: 0 auto;">
+        <table class="company-table">
+          <tbody>
+            <tr>
+              <th>会社名</th>
+              <td>株式会社炎熟（旧：円熟）</td>
+            </tr>
+            <tr>
+              <th>所在地</th>
+              <td>東京都渋谷区円山町6-7 アムフラット渋谷1F</td>
+            </tr>
+            <tr>
+              <th>設立</th>
+              <td>2021年10月</td>
+            </tr>
+            <tr>
+              <th>連絡先</th>
+              <td><a href="mailto:d-yamaguchi@en-juku.com" style="color: #D32F2F;">d-yamaguchi@en-juku.com</a></td>
+            </tr>
+            <tr>
+              <th>事業内容</th>
+              <td>
+                1. 営業支援事業<br>
+                2. 物流業界特化型裏方サービス「物流の控室」
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  <div class="gradient-divider"></div>
+  <!-- ========== Team Members ========== -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label font-display fade-up">TEAM</div>
+        <h2 class="section-title fade-up fade-up-d1">チームメンバー</h2>
+      </div>
 
-  <!-- ========== Company Info Section ========== -->
-  <section class="py-24 md:py-32">
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="max-w-3xl mx-auto fade-up">
-        <div class="bg-navy-light/50 border border-white/5 rounded-2xl overflow-hidden">
-          <table class="company-table">
-            <tbody>
-              <tr>
-                <th>会社名</th>
-                <td>株式会社炎熟</td>
-              </tr>
-              <tr>
-                <th>代表者</th>
-                <td>山口 大輔</td>
-              </tr>
-              <tr>
-                <th>事業内容</th>
-                <td>
-                  物流業界特化型BPO・ビジネスデベロップメント<br>
-                  ・資料作成（営業・稟議・会議・新規事業）<br>
-                  ・WMSシステム導入支援<br>
-                  ・採用計画・採用支援<br>
-                  ・新規事業開発支援<br>
-                  ・営業支援<br>
-                  ・BPO全般
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="team-grid">
+        <!-- Member 1 -->
+        <div class="team-card fade-up">
+          <div class="team-avatar">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="22" r="12"/><path d="M10 56c0-12 10-22 22-22s22 10 22 22"/></svg>
+          </div>
+          <div class="team-role">事業支援</div>
+          <div class="team-name">山口 椋子</div>
+          <div class="team-skill">エンプラ開拓・法人営業全般・セミナーマーケティング</div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="team-card fade-up fade-up-d1">
+          <div class="team-avatar">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="22" r="12"/><path d="M10 56c0-12 10-22 22-22s22 10 22 22"/></svg>
+          </div>
+          <div class="team-role">コンサル</div>
+          <div class="team-name">石橋</div>
+          <div class="team-skill">業務改善・法人営業全般・研修代行</div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="team-card fade-up fade-up-d2">
+          <div class="team-avatar">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="22" r="12"/><path d="M10 56c0-12 10-22 22-22s22 10 22 22"/></svg>
+          </div>
+          <div class="team-role">事業支援・立上げ</div>
+          <div class="team-name">T.O</div>
+          <div class="team-skill">事業グロース・法人営業全般・NO.2としての支援</div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="team-card fade-up">
+          <div class="team-avatar">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="22" r="12"/><path d="M10 56c0-12 10-22 22-22s22 10 22 22"/></svg>
+          </div>
+          <div class="team-role">マーケ統括</div>
+          <div class="team-name">上村</div>
+          <div class="team-skill">PJマネジメント・マーケ戦略立案実行・オフライン広告</div>
+        </div>
+
+        <!-- Member 5 -->
+        <div class="team-card fade-up fade-up-d1">
+          <div class="team-avatar">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="22" r="12"/><path d="M10 56c0-12 10-22 22-22s22 10 22 22"/></svg>
+          </div>
+          <div class="team-role">デザイナー兼マーケター</div>
+          <div class="team-name">田村</div>
+          <div class="team-skill">webデザイン全般・SNSマーケ・ECサイト構築</div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="gradient-divider"></div>
-
-  <!-- ========== CTA Section ========== -->
-  <section class="py-24 md:py-32 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-blue-500/5"></div>
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-      <div class="text-center fade-up">
-        <span class="section-label">GET STARTED</span>
-        <h2 class="section-title mt-4">まずは無料相談から。</h2>
-        <p class="section-description mt-6">
-          物流に関する課題なら、まずはお気軽にご相談ください。<br>
-          完全成果報酬だから、リスクはゼロです。
-        </p>
-        <div class="mt-10">
-          <a href="contact.html" class="btn-primary text-base px-10 py-4">
-            <i class="fa-solid fa-envelope"></i>
-            お問い合わせはこちら
-          </a>
-        </div>
-      </div>
+  <!-- ========== CTA ========== -->
+  <section class="section-red cta-section">
+    <div class="container fade-up">
+      <h2>まずはお気軽にご相談ください</h2>
+      <p>お問合せはメールまたはお電話にてお気軽にどうぞ。</p>
+      <a href="contact.html" class="btn-white">お問合せはこちら</a>
     </div>
   </section>
 
   <!-- ========== Footer ========== -->
-  <footer class="border-t border-white/5 py-12">
-    <div class="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <a href="index.html" class="flex items-center gap-2">
-          <span class="text-xl font-bold font-en"><span class="text-accent">炎</span>熟</span>
-          <span class="text-gray-500 text-sm ml-2">株式会社炎熟</span>
-        </a>
-        <nav class="flex items-center gap-6">
-          <a href="index.html" class="footer-link">About</a>
-          <a href="company.html" class="footer-link">Company</a>
-          <a href="contact.html" class="footer-link">Contact</a>
-        </nav>
-      </div>
-      <div class="mt-8 pt-8 border-t border-white/5 text-center">
-        <p class="text-gray-500 text-sm font-en">
-          &copy; 2026 株式会社炎熟. All rights reserved.
-        </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-company">株式会社炎熟</div>
+        <div class="footer-info">
+          東京都渋谷区円山町6-7 アムフラット渋谷1F<br>
+          <a href="mailto:d-yamaguchi@en-juku.com">d-yamaguchi@en-juku.com</a>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2021 炎熟 All Rights Reserved.
+        </div>
       </div>
     </div>
   </footer>
 
-  <button class="scroll-top" aria-label="ページトップへ">
-    <i class="fa-solid fa-chevron-up"></i>
-  </button>
+  <button class="scroll-top" aria-label="ページトップへ">↑</button>
 
   <script src="js/main.js"></script>
 </body>
