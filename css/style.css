@@ -1322,9 +1322,10 @@ ul, ol {
 @media (max-width: 768px) {
   .logo-wall {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-    max-width: 100%;
-    width: 100%;
+    gap: 0.75rem;
+    max-width: calc(100% - 48px);
+    width: calc(100% - 48px);
+    margin: 0 auto;
     box-sizing: border-box;
   }
   .logo-wall-item {
@@ -1332,17 +1333,18 @@ ul, ol {
     overflow: hidden;
     height: 0;
     padding: 0;
-    padding-bottom: 66%;
+    padding-bottom: 55%;
     position: relative;
-    border-radius: 6px;
+    border-radius: 8px;
+    border: 1px solid var(--color-gray-border);
   }
   .logo-wall-item img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 75%;
-    max-height: 60%;
+    max-width: 70%;
+    max-height: 55%;
     width: auto;
     height: auto;
   }
