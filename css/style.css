@@ -317,7 +317,7 @@ ul, ol {
   .hero-sub {
     font-size: clamp(0.75rem, 3vw, 0.9375rem);
     line-height: 1.6;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .hero .btn-primary {
