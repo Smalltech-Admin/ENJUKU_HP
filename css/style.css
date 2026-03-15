@@ -28,7 +28,6 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 72px;
   font-size: 16px;
-  overflow-x: hidden;
 }
 
 body {
@@ -63,11 +62,7 @@ ul, ol {
   margin: 0 auto;
   padding: 0 24px;
   box-sizing: border-box;
-}
-
-section, .section, .section-gray, .section-black, .section-red {
-  max-width: 100vw;
-  overflow-x: hidden;
+  width: 100%;
 }
 
 /* --- Typography --- */
@@ -304,9 +299,9 @@ section, .section, .section-gray, .section-black, .section-red {
     aspect-ratio: 3 / 2;
     background-size: cover;
     background-position: center;
-    overflow-x: hidden;
-    overflow-y: visible;
-    max-width: 100vw;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
   }
 
   .hero-content {
@@ -461,6 +456,7 @@ section, .section, .section-gray, .section-black, .section-red {
 .vm-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 100%;
 }
 
 .vm-card {
@@ -1325,23 +1321,16 @@ section, .section, .section-gray, .section-black, .section-red {
 
 @media (max-width: 768px) {
   .logo-wall {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
     max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
   .logo-wall-item {
     padding: 0.5rem;
     aspect-ratio: 3 / 2;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo-wall {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-  }
-  .logo-wall-item {
-    padding: 0.4rem;
+    min-width: 0;
   }
 }
 
