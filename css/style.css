@@ -235,6 +235,10 @@ ul, ol {
   .hamburger {
     display: flex;
   }
+
+  .hero {
+    background-position: 70% center;
+  }
 }
 
 /* ============================================
