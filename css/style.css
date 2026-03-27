@@ -296,7 +296,7 @@ ul, ol {
   .hero {
     height: auto;
     min-height: auto;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 7 / 4;
     background-size: cover;
     background-position: center;
     overflow: hidden;
