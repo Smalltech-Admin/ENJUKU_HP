@@ -3,3 +3,6 @@
 
 # クライアント支給素材（画像・PDF 約10MB）。Git管理せずGoogle Drive側で保管する
 /doc/
+
+# Claude Code の個人設定（端末ごとに異なるためコミットしない）
+.claude/settings.local.json
